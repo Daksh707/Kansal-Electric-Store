@@ -161,7 +161,7 @@ header .info {
 }
 
 .about-container {
-    display: grid;
+    /* display: grid; */
     gap: 2rem;
     position: relative;
     padding: 0 1rem;
@@ -267,7 +267,7 @@ iframe {
 /* Button Styles */
 .btn {
     display: inline-block;
-    background: var(--color-secondary);
+    background: rgb(187, 186, 186);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
