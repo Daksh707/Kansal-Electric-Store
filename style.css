@@ -54,7 +54,7 @@ section {
 /* Navigation */
 .logo img {
     height: 100%;
-    width: 135px; /* Increased from 140px */
+    width: 130px; /* Increased from 140px */
     max-height: 55px; /* Increased from 55px */
 }
 
@@ -103,8 +103,11 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
+    width:100%;
     min-height: 500px;
+    /* height: 100vh;
+    min-height: 500px; */
 }
 
 header {
