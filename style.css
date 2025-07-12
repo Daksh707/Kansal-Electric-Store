@@ -102,7 +102,7 @@ section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 100%;
     width:100%;
     min-height: 500px;
@@ -358,3 +358,18 @@ iframe {
         gap: 1rem;
     }
 }
+
+@media (max-width: 375px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.4rem; }
+  .container {
+    width: 95%;
+  }
+  .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  header .info {
+    max-width: 90%;
+  }
+}
+
