@@ -345,7 +345,7 @@ iframe {
 }
 
 /* Mobile Navigation */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .navlist.show {
         display: flex;
         flex-direction: column;
@@ -371,5 +371,66 @@ iframe {
   header .info {
     max-width: 90%;
   }
+} */
+
+/* ✅ Mobile Navigation - updated final */
+@media (max-width: 767px) {
+  .navlist {
+    display: none; /* hide menu bar by default */
+  }
+
+  .navlist.show {
+    display: flex; /* show when toggled */
+    flex-direction: column;
+    position: absolute;
+    top: 58px; /* adjust to your navbar height */
+    left: 0;
+    right: 0;
+    background-color: rgb(16, 16, 16);
+    padding: 1rem;
+    gap: 1rem;
+    z-index: 1000;
+  }
+
+  .menu-btn {
+    display: block; /* show hamburger icon */
+  }
+
+  .nl-container .container {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+/* ✅ Ensure desktop menu visible */
+@media (min-width: 768px) {
+  .navlist {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    padding: 0;
+    gap: 3rem;
+  }
+
+  .menu-btn {
+    display: none; /* hide hamburger on desktop */
+  }
+}
+
+/* ✅ iPhone small screens specific adjustments */
+@media (max-width: 375px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.4rem; }
+  .container {
+    width: 95%;
+  }
+  .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  header .info {
+    max-width: 90%;
+  }
+}
+
 
